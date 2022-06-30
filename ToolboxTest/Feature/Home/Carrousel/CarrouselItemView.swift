@@ -33,21 +33,23 @@ struct CarrouselItemView: View {
             Text(description)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.caption)
-            if let url = video {
-                Button {
+            Button {
+                if let url = video {
                     viewModel.player = AVPlayer(url: URL(string: url)!)
                     viewModel.showVideo = true
-                } label: {
-                    Text("Preview")
-                        .foregroundColor(.white)
-                        .bold()
-                        .frame(maxWidth: .infinity, maxHeight: 40)
-                        .background(
-                            Color.cyan
-                                .cornerRadius(15)
-                        )
                 }
+            } label: {
+                Text(video != nil ? "Preview" : "Preview not available")
+                    .foregroundColor(.white)
+                    .bold()
+                    .frame(maxWidth: .infinity, maxHeight: 40)
+                    .background(
+                        video != nil ? Color.cyan
+                            .cornerRadius(15) : Color.gray.cornerRadius(15)
+                        
+                    )
             }
+            .disabled(video == nil)
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(35)
