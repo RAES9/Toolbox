@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8777865E286E101400FF3300 /* ToolboxTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777865D286E101400FF3300 /* ToolboxTestApp.swift */; };
-		87778660286E101400FF3300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777865F286E101400FF3300 /* ContentView.swift */; };
+		87778660286E101400FF3300 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777865F286E101400FF3300 /* LoginView.swift */; };
 		87778662286E101700FF3300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87778661286E101700FF3300 /* Assets.xcassets */; };
 		87778665286E101700FF3300 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87778664286E101700FF3300 /* Preview Assets.xcassets */; };
 		8777866F286E101700FF3300 /* ToolboxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777866E286E101700FF3300 /* ToolboxTestTests.swift */; };
 		87778679286E101700FF3300 /* ToolboxTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87778678286E101700FF3300 /* ToolboxTestUITests.swift */; };
 		8777867B286E101700FF3300 /* ToolboxTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777867A286E101700FF3300 /* ToolboxTestUITestsLaunchTests.swift */; };
+		87778689286E11EB00FF3300 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87778688286E11EB00FF3300 /* RestClient.swift */; };
+		8777868F286E137F00FF3300 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777868E286E137F00FF3300 /* LoginResponse.swift */; };
+		87778691286E141000FF3300 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87778690286E141000FF3300 /* LoginRequest.swift */; };
+		87778695286E14E600FF3300 /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87778694286E14E600FF3300 /* LoginResource.swift */; };
+		87778697286E154C00FF3300 /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87778696286E154C00FF3300 /* LoginClient.swift */; };
+		8777869B286E199E00FF3300 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777869A286E199E00FF3300 /* LoginViewModel.swift */; };
+		8777869D286E1AFA00FF3300 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777869C286E1AFA00FF3300 /* Service.swift */; };
+		877786A2286E203E00FF3300 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786A1286E203E00FF3300 /* HomeView.swift */; };
+		877786A5286E21D700FF3300 /* HomeResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786A4286E21D700FF3300 /* HomeResource.swift */; };
+		877786A7286E21E700FF3300 /* HomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786A6286E21E700FF3300 /* HomeClient.swift */; };
+		877786AC286E22B800FF3300 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786AB286E22B800FF3300 /* DataResponse.swift */; };
+		877786AE286E249100FF3300 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786AD286E249100FF3300 /* HomeViewModel.swift */; };
+		877786B1286E26EA00FF3300 /* CarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786B0286E26EA00FF3300 /* CarrouselView.swift */; };
+		877786B3286E2A6E00FF3300 /* CarrouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877786B2286E2A6E00FF3300 /* CarrouselItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +50,7 @@
 /* Begin PBXFileReference section */
 		8777865A286E101400FF3300 /* ToolboxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolboxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8777865D286E101400FF3300 /* ToolboxTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolboxTestApp.swift; sourceTree = "<group>"; };
-		8777865F286E101400FF3300 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8777865F286E101400FF3300 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		87778661286E101700FF3300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87778664286E101700FF3300 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8777866A286E101700FF3300 /* ToolboxTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolboxTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,21 @@
 		87778674286E101700FF3300 /* ToolboxTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolboxTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87778678286E101700FF3300 /* ToolboxTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolboxTestUITests.swift; sourceTree = "<group>"; };
 		8777867A286E101700FF3300 /* ToolboxTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolboxTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87778688286E11EB00FF3300 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		8777868E286E137F00FF3300 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		87778690286E141000FF3300 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		87778694286E14E600FF3300 /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
+		87778696286E154C00FF3300 /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		8777869A286E199E00FF3300 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8777869C286E1AFA00FF3300 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		877786A1286E203E00FF3300 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		877786A4286E21D700FF3300 /* HomeResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResource.swift; sourceTree = "<group>"; };
+		877786A6286E21E700FF3300 /* HomeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClient.swift; sourceTree = "<group>"; };
+		877786AB286E22B800FF3300 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		877786AD286E249100FF3300 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		877786B0286E26EA00FF3300 /* CarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselView.swift; sourceTree = "<group>"; };
+		877786B2286E2A6E00FF3300 /* CarrouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselItemView.swift; sourceTree = "<group>"; };
+		877786B4286E325700FF3300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +123,10 @@
 		8777865C286E101400FF3300 /* ToolboxTest */ = {
 			isa = PBXGroup;
 			children = (
+				877786B4286E325700FF3300 /* Info.plist */,
+				87778698286E16BA00FF3300 /* Feature */,
+				87778687286E11CE00FF3300 /* Networking */,
 				8777865D286E101400FF3300 /* ToolboxTestApp.swift */,
-				8777865F286E101400FF3300 /* ContentView.swift */,
 				87778661286E101700FF3300 /* Assets.xcassets */,
 				87778663286E101700FF3300 /* Preview Content */,
 			);
@@ -125,6 +156,131 @@
 				8777867A286E101700FF3300 /* ToolboxTestUITestsLaunchTests.swift */,
 			);
 			path = ToolboxTestUITests;
+			sourceTree = "<group>";
+		};
+		87778687286E11CE00FF3300 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				877786A3286E21BC00FF3300 /* Home */,
+				87778692286E14A700FF3300 /* Login */,
+				87778688286E11EB00FF3300 /* RestClient.swift */,
+				8777869C286E1AFA00FF3300 /* Service.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8777868A286E132100FF3300 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8777868C286E133300FF3300 /* Response */,
+				8777868B286E132500FF3300 /* Request */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8777868B286E132500FF3300 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				87778690286E141000FF3300 /* LoginRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8777868C286E133300FF3300 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8777868E286E137F00FF3300 /* LoginResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		87778692286E14A700FF3300 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				87778693286E14D500FF3300 /* Client */,
+				8777868A286E132100FF3300 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		87778693286E14D500FF3300 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				87778694286E14E600FF3300 /* LoginResource.swift */,
+				87778696286E154C00FF3300 /* LoginClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		87778698286E16BA00FF3300 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				877786A0286E1FB400FF3300 /* Home */,
+				87778699286E16CE00FF3300 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		87778699286E16CE00FF3300 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8777865F286E101400FF3300 /* LoginView.swift */,
+				8777869A286E199E00FF3300 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		877786A0286E1FB400FF3300 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				877786AF286E268300FF3300 /* Carrousel */,
+				877786A1286E203E00FF3300 /* HomeView.swift */,
+				877786AD286E249100FF3300 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		877786A3286E21BC00FF3300 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				877786A9286E229F00FF3300 /* Model */,
+				877786A8286E228300FF3300 /* Client */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		877786A8286E228300FF3300 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				877786A4286E21D700FF3300 /* HomeResource.swift */,
+				877786A6286E21E700FF3300 /* HomeClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		877786A9286E229F00FF3300 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				877786AA286E22AA00FF3300 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		877786AA286E22AA00FF3300 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				877786AB286E22B800FF3300 /* DataResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		877786AF286E268300FF3300 /* Carrousel */ = {
+			isa = PBXGroup;
+			children = (
+				877786B0286E26EA00FF3300 /* CarrouselView.swift */,
+				877786B2286E2A6E00FF3300 /* CarrouselItemView.swift */,
+			);
+			path = Carrousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +413,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87778660286E101400FF3300 /* ContentView.swift in Sources */,
+				877786B1286E26EA00FF3300 /* CarrouselView.swift in Sources */,
+				87778660286E101400FF3300 /* LoginView.swift in Sources */,
+				87778695286E14E600FF3300 /* LoginResource.swift in Sources */,
+				87778689286E11EB00FF3300 /* RestClient.swift in Sources */,
+				877786A2286E203E00FF3300 /* HomeView.swift in Sources */,
+				8777868F286E137F00FF3300 /* LoginResponse.swift in Sources */,
+				8777869B286E199E00FF3300 /* LoginViewModel.swift in Sources */,
+				87778697286E154C00FF3300 /* LoginClient.swift in Sources */,
+				877786AC286E22B800FF3300 /* DataResponse.swift in Sources */,
+				877786A7286E21E700FF3300 /* HomeClient.swift in Sources */,
+				877786AE286E249100FF3300 /* HomeViewModel.swift in Sources */,
+				87778691286E141000FF3300 /* LoginRequest.swift in Sources */,
+				877786B3286E2A6E00FF3300 /* CarrouselItemView.swift in Sources */,
+				877786A5286E21D700FF3300 /* HomeResource.swift in Sources */,
 				8777865E286E101400FF3300 /* ToolboxTestApp.swift in Sources */,
+				8777869D286E1AFA00FF3300 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +590,7 @@
 				DEVELOPMENT_TEAM = CFSUUSC9F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToolboxTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +620,7 @@
 				DEVELOPMENT_TEAM = CFSUUSC9F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToolboxTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
